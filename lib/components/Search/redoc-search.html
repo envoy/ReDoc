@@ -9,7 +9,10 @@
   <li class="result menu-item-header" *ngFor="let item of items"
     ngClass="menu-item-depth-{{item.menuItem.depth}} {{item.menuItem.ready ? '' : 'disabled'}}"
     (click)="clickSearch(item)">
-    <span class="operation-type" [ngClass]="item.menuItem?.metadata?.operation" *ngIf="item.menuItem?.metadata?.operation"> {{item.menuItem?.metadata?.operation}} </span><!--
-    --><span class="menu-item-title">{{item.menuItem.name}}</span>
+    <span class="menu-item-title">
+      <i class="fa fa-folder" *ngIf="item.menuItem?.depth == 1"></i>
+      <i class="fa fa-code" *ngIf="item.menuItem?.metadata?.operation"></i>
+      {{item.menuItem.name}}
+    </span>
   </li>
 </ul>

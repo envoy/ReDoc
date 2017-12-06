@@ -6,13 +6,15 @@
 }
 
 .search-input-wrap {
-  padding: 0 20px;
+  padding: 0 10px;
 
   > svg {
     width: 13px;
     height: 27px;
     display: inline-block;
     position: absolute;
+    left: 21px;
+    top: 12px;
 
     path {
       fill: lighten($text-color, 20%);
@@ -25,6 +27,7 @@
     width: 13px;
     text-align: center;
     right: 20px;
+    top: 12px;
     height: 28px;
     line-height: 28px;
     vertical-align: middle;
@@ -35,16 +38,17 @@
 input {
   width: 100%;
   box-sizing: border-box;
-  padding: 5px 20px 5px 20px;
+  padding: 5px 20px 5px 28px;
 
   border: 0;
-  border-bottom: 1px solid darken($side-bar-bg-color, 10%);
-  font-weight: bold;
+  border: 1px solid darken($side-bar-bg-color, 10%);
+  font-weight: normal;
 
-  font-size: 13px;
+  font-size: 15px;
   color: $text-color;
-  background-color: transparent;
+  background-color: #fff;
   outline: none;
+  border-radius: 30px;
 }
 
 .search-results {
@@ -58,15 +62,24 @@ input {
   border-top: 1px solid darken($side-bar-bg-color, 10%);
   line-height: 1.2;
 
-  min-height: 150px;
   max-height: 250px;
+  font-family: $base-font-family;
 
   > li {
     display: block;
     cursor: pointer;
-    font-family: Montserrat, sans-serif;
+    font-family: $base-font-family;
+    font-weight: 500;
     font-size: 13px;
-    padding: 5px 20px;
+    padding: 4px 20px;
+    padding-left: 44px;
+    position: relative;
+    i.fa {
+      position: absolute;
+      left: 20px;
+      color: $red;
+      top: 6px;
+    }
 
     &:hover {
       background-color: darken($side-bar-bg-color, 10%);
@@ -74,8 +87,12 @@ input {
   }
 
   li.menu-item-depth-1 {
-    color: $primary-color;
-    text-transform: uppercase;
+    // color: $primary-color;
+    // text-transform: uppercase;
+  }
+
+  li.menu-item-depth-2 {
+    font-size: 0.9em;
   }
 
   > li.disabled {

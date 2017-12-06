@@ -60,7 +60,7 @@
 
 .menu-subitems {
   margin: 0;
-  font-size: 0.929em;
+  font-size: $h5;
   line-height: 1.2em;
   font-weight: $light;
   color: rgba($text-color, .9);
@@ -78,7 +78,7 @@
     font-family: $headers-font, $headers-font-family;
     font-weight: $light;
     font-size: $h5;
-    text-transform: uppercase;
+    // text-transform: uppercase;
   }
 
   // do not capitalize method summuary in level-1 menu
@@ -98,7 +98,8 @@
 
 .menu-item-depth-2 {
   > .menu-item-header {
-    padding-left: $side-menu-item-hpadding;
+    padding-left: $side-menu-item-hpadding * 2;
+    font-size: 0.9em;
   }
 
   > .menu-item-header:hover,
@@ -119,7 +120,8 @@
     font-family: $headers-font, $headers-font-family;
     color: rgba($text-color, .4);
     text-transform: uppercase;
-    font-size: 0.8em;
+    font-size: 0.9em;
+    font-weight: 600;
     padding-bottom: 0;
     cursor: default;
 
