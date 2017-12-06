@@ -63,7 +63,7 @@ side-menu {
 
 .api-content {
   margin-left: $side-bar-width;
-  z-index: 50;
+  z-index: 100;
   position: relative;
   // height: 100vh;
   // overflow: scroll;
@@ -80,7 +80,7 @@ side-menu {
   bottom: 0;
   right: 0;
   left: $side-bar-width;
-  z-index: 1;
+  z-index: 85;
 
   &-actual {
     background: $samples-panel-bg-color;
@@ -114,6 +114,10 @@ side-menu {
 
 /* global menu items styles (search results + menu) */
 :host /deep/ {
+  mark {
+    background-color: $yellow;
+  }
+
   .menu-item-header > span {
     display: inline-block;
     vertical-align: middle;

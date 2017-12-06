@@ -137,6 +137,12 @@ pre {
       border-radius: $border-radius*2;
       background-color: darken($black, 2%);
       margin-bottom: 36px;
+      font-family: $mono-font, $mono-font-family;
+      font-size: $mono-font-size;
+      line-height: $mono-line-height;
+      li {
+        font-family: $mono-font, $mono-font-family;
+      }
   }
 
   ul, .redoc-json ul {

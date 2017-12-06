@@ -4,13 +4,12 @@
 </div>
 <loading-bar *ngIf="options.lazyRendering" [progress]="loadingProgress"> </loading-bar>
 <div class="redoc-wrap" *ngIf="specLoaded && !error">
-  <div class="background">
+  <div class="background shadow">
     <div class="background-actual"> </div>
   </div>
   <div class="menu-content" sticky-sidebar [disable]="specLoading"
   [scrollParent]="options.$scrollParent" [scrollYOffset]="options.scrollYOffset">
       <div class="menu-header">
-        <api-logo> </api-logo>
         <redoc-search> </redoc-search>
       </div>
       <side-menu> </side-menu>

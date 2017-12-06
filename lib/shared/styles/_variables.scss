@@ -1,15 +1,15 @@
 // Colors
 // ---------------------------
-$primary-color: #0033a0;
-$secondary-color: #263238;
-$black: #263238;
-$green: #00aa13;
-$yellow: #f1c400;
-$red: #e53935;
+$primary-color: #EF3934;
+$secondary-color: #282C36;
+$black: #282C36;
+$green: #44C95B;
+$yellow: #FFB400;
+$red: #EF3934;
 $background-color: #fff;
 $border-color: #ccc;
 
-$em-size: 14px;
+$em-size: 15px;
 
 // Font weights
 // ---------------------------
@@ -19,24 +19,32 @@ $bold: 700;
 
 // Base Font
 // ---------------------------
-$base-font: Roboto;
-$base-font-family: sans-serif;
+$base-font: "Cera Pro";
+$base-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $base-font-weight: $light;
 $base-font-size: 1em;
 $base-line-height: 1.5em;
 $text-color: $black;
 
+// Mono Font
+// ---------------------------
+$mono-font: "Andale Mono";
+$mono-font-family: monospace;
+$mono-font-size: 0.85em;
+$mono-line-height: 1.3em;
+$text-color: $black;
+
 // Heading Font
 // ---------------------------
-$headers-font: Montserrat;
-$headers-font-family: sans-serif;
+$headers-font: "Cera Pro";
+$headers-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $headers-font-weight: $regular;
 $headers-color: $primary-color;
 $h1: 1.85714285714286em;
 $h2: 1.5714285714285714em;
 $h3: 1.2857142857142858em;
 $h4: 1.1428571428571428em;
-$h5: 0.929em;
+$h5: 1em;
 
 // spacings
 $section-spacing: 40px;
